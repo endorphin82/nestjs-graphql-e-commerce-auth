@@ -14,19 +14,20 @@ export class ProductService {
   }
 
   async create(data: ProductInput): Promise<ProductEntity> {
-    return {} as any;
+    return this.productRepository.create(data)
   }
 
   async findOneById(id: number): Promise<ProductEntity> {
-    return {} as any;
+    return this.productRepository.findOne(id)
   }
 
   async findAll(recipesArgs: ProductArgs): Promise<ProductEntity[]> {
-    return this.productRepository.find();
+    return this.productRepository.find(recipesArgs);
     // [] as Product[];
   }
 
-  async remove(id: string): Promise<boolean> {
+  async remove(id: number): Promise<boolean> {
     return true;
+    // await this.productRepository.remove(id);
   }
 }

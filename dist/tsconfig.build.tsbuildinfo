@@ -1162,7 +1162,7 @@
         "affectsGlobalScope": false
       },
       "../src/app.service.ts": {
-        "version": "eaf8514ce110fa428a93a27408df4d06d133dbd9ed0a775c315ddfdd507853a9",
+        "version": "4bc5513115add73352059f56fff9a1e3fd8206a32aadcdee599ad7bf4f934570",
         "signature": "653711fba8904aa27fd8911b63cf526e7b334e13a292da4cefdbbe179ac3f3f2",
         "affectsGlobalScope": false
       },
@@ -5606,8 +5606,8 @@
         "affectsGlobalScope": false
       },
       "../src/product/product.service.ts": {
-        "version": "f59c257d598f5f6f7ccf92ddd01892b9a724f5a9fc1c924546ad311c64f1165d",
-        "signature": "b2d703a5a04a67c5f8b97c058dc4c29c8fb7ac9f22d9b718488a6005aed0fba7",
+        "version": "c26bc2787cfadc6b81d01d322236ec7438960c6865dc407fdb63a0e81b7843b1",
+        "signature": "e56828a7829b798fd2917b47da668f7b3fc4a4f085dfdbba6c581f0cbe26811e",
         "affectsGlobalScope": false
       },
       "../node_modules/apollo-server-express/node_modules/apollo-server-plugin-base/dist/index.d.ts": {
@@ -5761,8 +5761,8 @@
         "affectsGlobalScope": false
       },
       "../src/product/product.resolver.ts": {
-        "version": "275a526506ba1b73da21574d37e1f06640bfc5e90d35933deff5bdbb789d8fa8",
-        "signature": "aeefba68a723977eb1a7391e9d1c225daa2220e1ea924c6fedd470da6401ef01",
+        "version": "8800d3b302eafa1e7aabd8ec619a9e76adb68972d934523c449e7ac563414e28",
+        "signature": "944ddb205ebd3272566af1560b7b02cadc499d7054bf770cbc0223e5ea8596de",
         "affectsGlobalScope": false
       },
       "../src/database/product.providers.ts": {
@@ -10862,6 +10862,8 @@
         "../node_modules/@nestjs/graphql/index.d.ts",
         "../node_modules/apollo-server-express/dist/index.d.ts",
         "../src/models/product.model.ts",
+        "../src/product/dto/product.args.ts",
+        "../src/product/dto/product.input.ts",
         "../src/product/product.service.ts"
       ],
       "../src/product/product.service.ts": [
@@ -15651,6 +15653,8 @@
       ],
       "../src/product/product.resolver.ts": [
         "../src/models/product.model.ts",
+        "../src/product/dto/product.args.ts",
+        "../src/product/dto/product.input.ts",
         "../src/product/product.service.ts"
       ],
       "../src/product/product.service.ts": [

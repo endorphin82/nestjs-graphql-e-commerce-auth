@@ -10,7 +10,7 @@ exports.AppService = void 0;
 const common_1 = require("@nestjs/common");
 let AppService = class AppService {
     getHello() {
-        return 'Hello World!';
+        return "<a href='http://localhost:3000/graphql' >gql payload</a>";
     }
 };
 AppService = __decorate([
