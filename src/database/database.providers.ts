@@ -1,7 +1,7 @@
 import { Connection, createConnection, getMetadataArgsStorage } from 'typeorm';
 import { join } from 'path';
 import { ConnectionOptions } from 'typeorm/connection/ConnectionOptions';
-
+import { ProductEntity } from '../models/product.entity';
 
 export const databaseProviders = [
   {
@@ -12,7 +12,7 @@ export const databaseProviders = [
       logging: true,
       autoLoadEntities: true,
       entities: [
-        __dirname + '/../**/*.entity{.ts,.js}',
+      ProductEntity
       ],
       synchronize: true,
     }),
