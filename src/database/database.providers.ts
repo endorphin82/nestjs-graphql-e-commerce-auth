@@ -11,7 +11,9 @@ export const databaseProviders = [
       database: join(__dirname, '..', 'data', 'data.sqlite'),
       logging: true,
       autoLoadEntities: true,
-      entities: getMetadataArgsStorage().tables.map(tbl => tbl.target),
+      entities: [
+        __dirname + '/../**/*.entity{.ts,.js}',
+      ],
       synchronize: true,
     }),
   },

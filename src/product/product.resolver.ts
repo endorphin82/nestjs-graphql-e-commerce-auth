@@ -1,7 +1,8 @@
 import { PubSub } from 'apollo-server-express';
 import { Product } from '../models/product.model';
-import { Resolver } from '@nestjs/graphql';
+import { Args, Query, Resolver } from '@nestjs/graphql';
 import { ProductService } from './product.service';
+import { NotFoundException } from '@nestjs/common';
 
 const pubSub = new PubSub();
 
@@ -9,4 +10,14 @@ const pubSub = new PubSub();
 export class ProductResolver {
   constructor(private readonly productService: ProductService) {
   }
+
+  @Query(returns => Product)
+  async product(@Args('id') id: number): Promise<Product> {
+    const product = await this.productService.findOneById(id);
+    if (!product) {
+      throw new NotFoundException(id);
+    }
+    return product;
+  }
+
 }

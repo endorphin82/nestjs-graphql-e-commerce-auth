@@ -1,22 +1,15 @@
-import { Field, InputType, Int } from '@nestjs/graphql';
-import { IsOptional, Length, MaxLength } from 'class-validator';
+import { ArgsType, Field, Int } from '@nestjs/graphql';
+import { Max, Min } from 'class-validator';
 
-@InputType()
-export class ProductInput {
-  @Field()
-  @MaxLength(500)
-  title: string;
 
-  @Field({ nullable: true })
-  @IsOptional()
-  @Length(2, 500)
-  image?: string;
-
-  @Field({ nullable: true })
-  @IsOptional()
-  @Length(2, 500)
-  description?: string;
+@ArgsType()
+export class ProductArgs {
+  @Field(type => Int)
+  @Min(0)
+  skip = 0;
 
   @Field(type => Int)
-  price: number;
+  @Min(0)
+  @Max(50)
+  take = 25;
 }

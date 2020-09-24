@@ -4961,12 +4961,12 @@
         "affectsGlobalScope": false
       },
       "../src/database/database.providers.ts": {
-        "version": "d13f0f710b84548562a4d0777f682e893194a5180b3fac686eef3a011048fea2",
+        "version": "5ae7f684bc98103c0239e39d6a3df4805e2bde4a43114d5569d169e5f5d5221b",
         "signature": "92d4189c0e5ed345e1483de0bcccc10ae8ed41d407924a369d78d9b3377b095f",
         "affectsGlobalScope": false
       },
       "../src/database/database.module.ts": {
-        "version": "5f710d2c3d83bf87425174bdaa19a21364c12b32aedc703aa81a3c6fb2ded782",
+        "version": "e2be744d78e83586c9a29dfdf4273b8a6b8e4db78c912eec9f76155e74b341f1",
         "signature": "a7ad670f373dd5665c73c7dc09a8e28b976a63bd7ed08def7c1c13456e87d3dc",
         "affectsGlobalScope": false
       },
@@ -5586,8 +5586,8 @@
         "affectsGlobalScope": false
       },
       "../src/product/dto/product.args.ts": {
-        "version": "7e55261ed4cd238a086ac38ac9d9a9cca88bd326e75334a77ec8dc5333de4af1",
-        "signature": "072df947d757d7182532fccaeb922b0db602e6793bcd9de81c783c950dd6dd1b",
+        "version": "37ad76e043edd4fb28636bf23368f82d22dafc7489473428b9a13224d380c259",
+        "signature": "2977c02a834bd2c58bf603a7bf9768ed9b43395c7dde4519d62b20c2b0755f85",
         "affectsGlobalScope": false
       },
       "../src/models/product.model.ts": {
@@ -5595,34 +5595,19 @@
         "signature": "ecf91f8fedf01ac7c5e4945f90c9df47b363c0400a825b7fa806a034e72a8106",
         "affectsGlobalScope": false
       },
-      "../src/product/product.service.ts": {
-        "version": "204957be16fc9529338c9d66d85cdb308925b2779fb05713449f20e41afecfda",
-        "signature": "c3b2e11e6db7c11969cc3a87eec6c8b716f7817f42a1acb56c1817af195e68eb",
-        "affectsGlobalScope": false
-      },
-      "../src/product/product.controller.ts": {
-        "version": "6f0ca5b736c0b49c78fd5bd9e13ebbfe2b2de5c91c9859284313ff97a62b9750",
-        "signature": "ce62838fc5b014fffa63563f6780bdd1e40b716ec237f6f8737b2ff65e41efe0",
-        "affectsGlobalScope": false
-      },
-      "../src/product/product.module.ts": {
-        "version": "63f62e47c1261d275efa57dc839c67334ca81a32b07a0fc374d340b5e5dcd765",
-        "signature": "7f8b34d3314e0b7048eab6a82a4f0bf423213dfd64d60f0c5e178bde34c23841",
-        "affectsGlobalScope": false
-      },
-      "../src/app.module.ts": {
-        "version": "ca0dd7b0280e21f9066c4f193cf2dc4cbe0e6b158a81612f08a5dac293869ca3",
-        "signature": "b82491e2990291580288c5602d4c017238977749d52b17391f0e45d9a29be644",
-        "affectsGlobalScope": false
-      },
-      "../src/main.ts": {
-        "version": "e25d9bd8f80b6ffbcc8826ed1b407e747e4fbe346c5bab62cbe5837da4eeb189",
-        "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+      "../src/product/dto/product.input.ts": {
+        "version": "7e55261ed4cd238a086ac38ac9d9a9cca88bd326e75334a77ec8dc5333de4af1",
+        "signature": "072df947d757d7182532fccaeb922b0db602e6793bcd9de81c783c950dd6dd1b",
         "affectsGlobalScope": false
       },
       "../src/models/product.entity.ts": {
         "version": "cea7e3cd0a9feb7f7c1f5b3740dc8a391ad1b5a05334bf8c4658f35604a55f5b",
         "signature": "7ff6ed4b0a556213d38f0047a389bd55efb84294fff2b075e918550e0bafb9af",
+        "affectsGlobalScope": false
+      },
+      "../src/product/product.service.ts": {
+        "version": "f59c257d598f5f6f7ccf92ddd01892b9a724f5a9fc1c924546ad311c64f1165d",
+        "signature": "b2d703a5a04a67c5f8b97c058dc4c29c8fb7ac9f22d9b718488a6005aed0fba7",
         "affectsGlobalScope": false
       },
       "../node_modules/apollo-server-express/node_modules/apollo-server-plugin-base/dist/index.d.ts": {
@@ -5776,8 +5761,33 @@
         "affectsGlobalScope": false
       },
       "../src/product/product.resolver.ts": {
-        "version": "b29ab57f7caa344e85b892afffa321126bd35a29ba7190efa057dc40583f66b3",
-        "signature": "7983cb433674bfb5bf73249337df1ed8d846ca87c88b4ef2300679be0d595abc",
+        "version": "275a526506ba1b73da21574d37e1f06640bfc5e90d35933deff5bdbb789d8fa8",
+        "signature": "aeefba68a723977eb1a7391e9d1c225daa2220e1ea924c6fedd470da6401ef01",
+        "affectsGlobalScope": false
+      },
+      "../src/database/product.providers.ts": {
+        "version": "8507a4dfbda7da3d28e0e6c68240dd0bfd5e91f65d68f68450bd1c7ea16a4394",
+        "signature": "1114321b20af6362d0aefd9e6646e7d09211cd631c1ef83128084d10b6d368dd",
+        "affectsGlobalScope": false
+      },
+      "../src/product/product.module.ts": {
+        "version": "aacdf2547ffaab7714f3e71873846697a5ef1cdb7006fb9dda2ab71b2da986dc",
+        "signature": "7f8b34d3314e0b7048eab6a82a4f0bf423213dfd64d60f0c5e178bde34c23841",
+        "affectsGlobalScope": false
+      },
+      "../src/app.module.ts": {
+        "version": "ca0dd7b0280e21f9066c4f193cf2dc4cbe0e6b158a81612f08a5dac293869ca3",
+        "signature": "b82491e2990291580288c5602d4c017238977749d52b17391f0e45d9a29be644",
+        "affectsGlobalScope": false
+      },
+      "../src/main.ts": {
+        "version": "e25d9bd8f80b6ffbcc8826ed1b407e747e4fbe346c5bab62cbe5837da4eeb189",
+        "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+        "affectsGlobalScope": false
+      },
+      "../src/product/product.controller.ts": {
+        "version": "6f0ca5b736c0b49c78fd5bd9e13ebbfe2b2de5c91c9859284313ff97a62b9750",
+        "signature": "ce62838fc5b014fffa63563f6780bdd1e40b716ec237f6f8737b2ff65e41efe0",
         "affectsGlobalScope": false
       },
       "../node_modules/@types/anymatch/index.d.ts": {
@@ -10815,6 +10825,10 @@
         "../node_modules/typeorm/connection/connectionoptions.d.ts",
         "../node_modules/typeorm/index.d.ts"
       ],
+      "../src/database/product.providers.ts": [
+        "../node_modules/typeorm/index.d.ts",
+        "../src/models/product.entity.ts"
+      ],
       "../src/main.ts": [
         "../node_modules/@nestjs/core/index.d.ts",
         "../src/app.module.ts"
@@ -10829,16 +10843,22 @@
         "../node_modules/@nestjs/graphql/index.d.ts",
         "../node_modules/class-validator/types/index.d.ts"
       ],
+      "../src/product/dto/product.input.ts": [
+        "../node_modules/@nestjs/graphql/index.d.ts",
+        "../node_modules/class-validator/types/index.d.ts"
+      ],
       "../src/product/product.controller.ts": [
         "../node_modules/@nestjs/common/index.d.ts"
       ],
       "../src/product/product.module.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../src/database/database.module.ts",
-        "../src/product/product.controller.ts",
+        "../src/database/product.providers.ts",
+        "../src/product/product.resolver.ts",
         "../src/product/product.service.ts"
       ],
       "../src/product/product.resolver.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/@nestjs/graphql/index.d.ts",
         "../node_modules/apollo-server-express/dist/index.d.ts",
         "../src/models/product.model.ts",
@@ -10846,8 +10866,11 @@
       ],
       "../src/product/product.service.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/typeorm/index.d.ts",
+        "../src/models/product.entity.ts",
         "../src/models/product.model.ts",
-        "../src/product/dto/product.args.ts"
+        "../src/product/dto/product.args.ts",
+        "../src/product/dto/product.input.ts"
       ]
     },
     "exportedModulesMap": {
@@ -11018,7 +11041,8 @@
         "../node_modules/@nestjs/common/cache/interfaces/index.d.ts"
       ],
       "../node_modules/@nestjs/common/cache/interceptors/cache.interceptor.d.ts": [
-        "../node_modules/@nestjs/common/interfaces/index.d.ts"
+        "../node_modules/@nestjs/common/interfaces/index.d.ts",
+        "../node_modules/rxjs/index.d.ts"
       ],
       "../node_modules/@nestjs/common/cache/interceptors/index.d.ts": [
         "../node_modules/@nestjs/common/cache/interceptors/cache.interceptor.d.ts"
@@ -11194,7 +11218,8 @@
         "../node_modules/@nestjs/common/interfaces/index.d.ts"
       ],
       "../node_modules/@nestjs/common/http/http.service.d.ts": [
-        "../node_modules/axios/index.d.ts"
+        "../node_modules/axios/index.d.ts",
+        "../node_modules/rxjs/index.d.ts"
       ],
       "../node_modules/@nestjs/common/http/index.d.ts": [
         "../node_modules/@nestjs/common/http/http.module.d.ts",
@@ -11218,7 +11243,8 @@
         "../node_modules/@nestjs/common/pipes/index.d.ts",
         "../node_modules/@nestjs/common/serializer/index.d.ts",
         "../node_modules/@nestjs/common/services/index.d.ts",
-        "../node_modules/@nestjs/common/utils/index.d.ts"
+        "../node_modules/@nestjs/common/utils/index.d.ts",
+        "../node_modules/reflect-metadata/index.d.ts"
       ],
       "../node_modules/@nestjs/common/interfaces/exceptions/exception-filter-metadata.interface.d.ts": [
         "../node_modules/@nestjs/common/interfaces/exceptions/exception-filter.interface.d.ts",
@@ -11239,20 +11265,23 @@
         "../node_modules/@nestjs/common/interfaces/type.interface.d.ts"
       ],
       "../node_modules/@nestjs/common/interfaces/exceptions/rpc-exception-filter.interface.d.ts": [
-        "../node_modules/@nestjs/common/interfaces/features/arguments-host.interface.d.ts"
+        "../node_modules/@nestjs/common/interfaces/features/arguments-host.interface.d.ts",
+        "../node_modules/rxjs/index.d.ts"
       ],
       "../node_modules/@nestjs/common/interfaces/exceptions/ws-exception-filter.interface.d.ts": [
         "../node_modules/@nestjs/common/interfaces/features/arguments-host.interface.d.ts"
       ],
       "../node_modules/@nestjs/common/interfaces/features/can-activate.interface.d.ts": [
-        "../node_modules/@nestjs/common/interfaces/features/execution-context.interface.d.ts"
+        "../node_modules/@nestjs/common/interfaces/features/execution-context.interface.d.ts",
+        "../node_modules/rxjs/index.d.ts"
       ],
       "../node_modules/@nestjs/common/interfaces/features/execution-context.interface.d.ts": [
         "../node_modules/@nestjs/common/interfaces/features/arguments-host.interface.d.ts",
         "../node_modules/@nestjs/common/interfaces/index.d.ts"
       ],
       "../node_modules/@nestjs/common/interfaces/features/nest-interceptor.interface.d.ts": [
-        "../node_modules/@nestjs/common/interfaces/features/execution-context.interface.d.ts"
+        "../node_modules/@nestjs/common/interfaces/features/execution-context.interface.d.ts",
+        "../node_modules/rxjs/index.d.ts"
       ],
       "../node_modules/@nestjs/common/interfaces/features/pipe-transform.interface.d.ts": [
         "../node_modules/@nestjs/common/interfaces/features/paramtype.interface.d.ts",
@@ -11382,6 +11411,9 @@
         "../node_modules/@nestjs/common/interfaces/nest-application-context.interface.d.ts",
         "../node_modules/@nestjs/common/interfaces/websockets/web-socket-adapter.interface.d.ts"
       ],
+      "../node_modules/@nestjs/common/interfaces/websockets/web-socket-adapter.interface.d.ts": [
+        "../node_modules/rxjs/index.d.ts"
+      ],
       "../node_modules/@nestjs/common/pipes/default-value.pipe.d.ts": [
         "../node_modules/@nestjs/common/index.d.ts"
       ],
@@ -11424,7 +11456,8 @@
       ],
       "../node_modules/@nestjs/common/serializer/class-serializer.interceptor.d.ts": [
         "../node_modules/@nestjs/common/interfaces/external/class-transform-options.interface.d.ts",
-        "../node_modules/@nestjs/common/interfaces/index.d.ts"
+        "../node_modules/@nestjs/common/interfaces/index.d.ts",
+        "../node_modules/rxjs/index.d.ts"
       ],
       "../node_modules/@nestjs/common/serializer/decorators/index.d.ts": [
         "../node_modules/@nestjs/common/serializer/decorators/serialize-options.decorator.d.ts"
@@ -11588,7 +11621,8 @@
         "../node_modules/@nestjs/core/nest-application.d.ts",
         "../node_modules/@nestjs/core/nest-factory.d.ts",
         "../node_modules/@nestjs/core/router/index.d.ts",
-        "../node_modules/@nestjs/core/services/index.d.ts"
+        "../node_modules/@nestjs/core/services/index.d.ts",
+        "../node_modules/reflect-metadata/index.d.ts"
       ],
       "../node_modules/@nestjs/core/injector/container.d.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
@@ -15611,12 +15645,19 @@
       "../src/database/database.providers.ts": [
         "../node_modules/typeorm/index.d.ts"
       ],
+      "../src/database/product.providers.ts": [
+        "../node_modules/typeorm/index.d.ts",
+        "../src/models/product.entity.ts"
+      ],
       "../src/product/product.resolver.ts": [
+        "../src/models/product.model.ts",
         "../src/product/product.service.ts"
       ],
       "../src/product/product.service.ts": [
-        "../src/models/product.model.ts",
-        "../src/product/dto/product.args.ts"
+        "../node_modules/typeorm/index.d.ts",
+        "../src/models/product.entity.ts",
+        "../src/product/dto/product.args.ts",
+        "../src/product/dto/product.input.ts"
       ]
     },
     "semanticDiagnosticsPerFile": [
@@ -16813,10 +16854,12 @@
       "../src/app.service.ts",
       "../src/database/database.module.ts",
       "../src/database/database.providers.ts",
+      "../src/database/product.providers.ts",
       "../src/main.ts",
       "../src/models/product.entity.ts",
       "../src/models/product.model.ts",
       "../src/product/dto/product.args.ts",
+      "../src/product/dto/product.input.ts",
       "../src/product/product.controller.ts",
       "../src/product/product.module.ts",
       "../src/product/product.resolver.ts",
