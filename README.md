@@ -1,1 +1,1 @@
-# nestjs-qraphql-e-commerce-auth
+# nestjs-graphql-e-commerce-auth
