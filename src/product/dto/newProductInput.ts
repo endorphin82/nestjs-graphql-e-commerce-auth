@@ -2,7 +2,7 @@ import { Field, InputType, Int } from '@nestjs/graphql';
 import { IsOptional, Length, MaxLength } from 'class-validator';
 
 @InputType()
-export class ProductInput {
+export class NewProductInput {
   @Field()
   @MaxLength(500)
   title: string;
