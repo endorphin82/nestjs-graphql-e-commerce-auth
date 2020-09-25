@@ -5,6 +5,7 @@ import { ProductService } from './product.service';
 import { NotFoundException } from '@nestjs/common';
 import { ProductArgs } from './dto/product.args';
 import { NewProductInput } from './dto/newProductInput';
+import { DeleteResult } from 'typeorm';
 
 const pubSub = new PubSub();
 
@@ -28,10 +29,15 @@ export class ProductResolver {
   }
 
   @Mutation(returns => Product)
-  async addProduct(
-    @Args('data') data: NewProductInput): Promise<Product> {
+  async addProduct(@Args('data') data: NewProductInput): Promise<Product> {
     const product = await this._productService.create(data);
     pubSub.publish('productAdded', { productAdded: Product });
     return product;
+  }
+
+  @Mutation(returns => Boolean  )
+  async removeProductById(
+    @Args('id') id: string): Promise<Boolean> {
+    return await this._productService.remove(id);
   }
 }

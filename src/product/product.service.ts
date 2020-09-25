@@ -1,8 +1,9 @@
 import { ProductArgs } from './dto/product.args';
 import { NewProductInput } from './dto/newProductInput';
 import { ProductEntity } from '../models/product.entity';
-import { Repository } from 'typeorm';
+import { DeleteResult, Repository } from 'typeorm';
 import { Inject, Injectable } from '@nestjs/common';
+import resetModuleRegistry = jest.resetModuleRegistry;
 
 @Injectable()
 export class ProductService {
@@ -13,7 +14,7 @@ export class ProductService {
   }
 
   async create(data: NewProductInput): Promise<ProductEntity> {
-    return this._productRepository.create(data);
+    return this._productRepository.save(data);
   }
 
   async findOneById(id: string): Promise<ProductEntity> {
@@ -26,8 +27,12 @@ export class ProductService {
     // return [] as ProductEntity[];
   }
 
-  async remove(id: number): Promise<boolean> {
-    return true;
-    // await this._productRepository.remove(id);
+  async remove(id: string): Promise<Boolean> {
+    try {
+      await this._productRepository.delete(id);
+      return true;
+    } catch (e) {
+      return false;
+    }
   }
 }
