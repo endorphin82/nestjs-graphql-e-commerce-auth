@@ -23,6 +23,7 @@ export class ProductService {
   async findAll(recipesArgs: ProductArgs): Promise<ProductEntity[]> {
     return this._productRepository.find(recipesArgs);
     // return [] as ProductEntity[];
+    // return [] as ProductEntity[];
   }
 
   async remove(id: number): Promise<boolean> {
