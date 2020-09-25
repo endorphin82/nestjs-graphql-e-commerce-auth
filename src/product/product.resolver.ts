@@ -14,7 +14,7 @@ export class ProductResolver {
   }
 
   @Query(returns => Product)
-  async product(@Args('id') id: number): Promise<Product> {
+  async product(@Args('id') id: string): Promise<Product> {
     const product = await this._productService.findOneById(id);
     if (!product) {
       throw new NotFoundException(id);
