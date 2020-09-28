@@ -1,9 +1,8 @@
 import { ProductArgs } from './dto/product.args';
 import { NewProductInput } from './dto/newProductInput';
 import { ProductEntity } from '../models/product.entity';
-import { DeleteResult, Repository } from 'typeorm';
+import {  Repository } from 'typeorm';
 import { Inject, Injectable } from '@nestjs/common';
-import resetModuleRegistry = jest.resetModuleRegistry;
 
 @Injectable()
 export class ProductService {
@@ -23,7 +22,6 @@ export class ProductService {
 
   async findAll(recipesArgs: ProductArgs): Promise<ProductEntity[]> {
     return this._productRepository.find(recipesArgs);
-    // return [] as ProductEntity[];
     // return [] as ProductEntity[];
   }
 
