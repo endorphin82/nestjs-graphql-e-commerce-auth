@@ -20,8 +20,8 @@ export class ProductService {
     return this._productRepository.findOne(id);
   }
 
-  async findAll(recipesArgs: ProductArgs): Promise<ProductEntity[]> {
-    return this._productRepository.find(recipesArgs);
+  async findAll(productsArgs: ProductArgs): Promise<ProductEntity[]> {
+    return this._productRepository.find(productsArgs);
     // return [] as ProductEntity[];
   }
 
