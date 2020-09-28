@@ -5,6 +5,6 @@ export const categoryProviders = [
   {
     provide: 'CATEGORY_REPOSITORY',
     useFactory: (connection: Connection) => connection.getRepository(CategoryEntity),
-    inject: ['SQLITE_CONNECTION'],
+    inject: ['DATABASE_CONNECTION'],
   },
 ];

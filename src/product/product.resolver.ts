@@ -1,16 +1,19 @@
 import { PubSub } from 'apollo-server-express';
 import { Product } from '../models/product.model';
-import { Args, Mutation, Query, Resolver } from '@nestjs/graphql';
+import { Args, Mutation, Query, ResolveField, Resolver } from '@nestjs/graphql';
 import { ProductService } from './product.service';
 import { NotFoundException } from '@nestjs/common';
 import { ProductArgs } from './dto/product.args';
 import { NewProductInput } from './dto/newProductInput';
+import { Category } from '../models/category.model';
 
 const pubSub = new PubSub();
 
 @Resolver(of => Product)
 export class ProductResolver {
-  constructor(private readonly _productService: ProductService) {
+  constructor(
+    private readonly _productService: ProductService
+  ) {
   }
 
   @Query(returns => Product)
@@ -25,6 +28,13 @@ export class ProductResolver {
   @Query(returns => [Product])
   async products(@Args() productArgs: ProductArgs): Promise<Product[]> {
     return await this._productService.findAll(productArgs);
+  }
+
+  @ResolveField()
+  @Query(returns => [Category])
+  async categories(@Args() productArgs: ProductArgs): Promise<Product[]> {
+    // @ts-ignore
+    return await this._productService.findByCat();
   }
 
   @Mutation(returns => Product)

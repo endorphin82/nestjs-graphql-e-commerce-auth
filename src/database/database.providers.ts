@@ -12,7 +12,7 @@ const postgresOpt: ConnectionOptions = ({
   password: 'changeme',
   database: 'ecom',
   synchronize: true,
-  entities: [ProductEntity],
+  entities: [ProductEntity, CategoryEntity],
   cli: {
     migrationsDir: 'src/migration',
   },

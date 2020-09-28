@@ -1,7 +1,9 @@
-import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
+import { Entity, Column, PrimaryGeneratedColumn, ManyToMany, JoinTable, BaseEntity } from 'typeorm';
+import { CategoryEntity } from './category.entity';
+import { Field } from '@nestjs/graphql';
 
 @Entity('Product')
-export class ProductEntity {
+export class ProductEntity extends BaseEntity{
   @PrimaryGeneratedColumn('uuid')
   id: string;
 
@@ -17,4 +19,17 @@ export class ProductEntity {
   @Column()
   price: number;
 
+  @ManyToMany(type => CategoryEntity, category => category.products, { lazy: true })
+  @JoinTable({
+    name: 'product_categories__category', // table name for the junction table of this relation
+    joinColumn: {
+      name: 'productId',
+      referencedColumnName: 'id',
+    },
+    inverseJoinColumn: {
+      name: 'categoryId',
+      referencedColumnName: 'id',
+    },
+  })
+  categories: CategoryEntity[];
 }
