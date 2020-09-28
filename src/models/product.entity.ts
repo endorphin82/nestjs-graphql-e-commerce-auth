@@ -1,17 +1,17 @@
 import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity('Product')
-export class ProductEntity{
-  @PrimaryGeneratedColumn()
-  id: number;
+export class ProductEntity {
+  @PrimaryGeneratedColumn('uuid')
+  id: string;
 
-  @Column({ length: 500 })
+  @Column({ type: 'varchar', length: 500 })
   title: string;
 
-  @Column({ length: 500 })
+  @Column({ type: 'varchar', length: 500 })
   image: string;
 
-  @Column({ length: 500 })
+  @Column({ type: 'varchar', length: 500 })
   description: string;
 
   @Column()
