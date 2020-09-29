@@ -1,24 +1,23 @@
 import { PubSub } from 'apollo-server-express';
 import { Args, Mutation, Query, ResolveField, Resolver } from '@nestjs/graphql';
-import { Category } from '../models/category.model';
 import { CategoryService } from './category.service';
 import { NewCategoryInput } from './dto/newCategoryInput';
 import { CategoryArgs } from './dto/category.args';
 import { NotFoundException } from '@nestjs/common';
-import { ProductArgs } from '../product/dto/product.args';
-import { ProductService } from '../product/product.service';
-import { Product } from '../models/product.model';
+
+import { CategoryEntity } from '../models/category.entity';
+import { ProductEntity } from '../models/product.entity';
 
 const pubSub = new PubSub();
 
-@Resolver(of => Category)
+@Resolver(of => CategoryEntity)
 export class CategoryResolver {
   constructor(
     private readonly _categoryService: CategoryService) {
   }
 
-  @Query(returns => Category)
-  async category(@Args('id') id: string): Promise<Category> {
+  @Query(returns => CategoryEntity)
+  async category(@Args('id') id: string): Promise<CategoryEntity> {
     const category = await this._categoryService.findOneById(id);
     if (!category) {
       throw new NotFoundException(id);
@@ -27,13 +26,13 @@ export class CategoryResolver {
   }
 
   @ResolveField()
-  @Query(returns => [Product])
-  async products(@Args() categoryArgs: CategoryArgs): Promise<Product[]> {
+  @Query(returns => [ProductEntity])
+  async products(@Args() categoryArgs: CategoryArgs): Promise<ProductEntity[]> {
     return await this._categoryService.findByProd();
   }
 
-  @Query(returns => [Category])
-  async categories(@Args() categoryArgs: CategoryArgs): Promise<Category[]> {
+  @Query(returns => [CategoryEntity])
+  async categories(@Args() categoryArgs: CategoryArgs): Promise<CategoryEntity[]> {
     return await this._categoryService.findAll(categoryArgs);
   }
 
@@ -43,10 +42,10 @@ export class CategoryResolver {
   //   return await this._productService.findAll();
   // }
 
-  @Mutation(returns => Category)
-  async addCategory(@Args('data') data: NewCategoryInput): Promise<Category> {
+  @Mutation(returns => CategoryEntity)
+  async addCategory(@Args('data') data: NewCategoryInput): Promise<CategoryEntity> {
     const category = await this._categoryService.create(data);
-    pubSub.publish('categoryAdded', { categoryAdded: Category });
+    pubSub.publish('categoryAdded', { categoryAdded: CategoryEntity });
     return category;
   }
 

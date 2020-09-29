@@ -17,7 +17,14 @@ export class NewProductInput {
   @Length(2, 500)
   description?: string;
 
+
+  @Field({ nullable: true })
+  @IsOptional()
+  @Length(2, 500)
+  categoryId?: string;
+
   @IsOptional()
   @Field(type => Int)
   price: number;
+
 }

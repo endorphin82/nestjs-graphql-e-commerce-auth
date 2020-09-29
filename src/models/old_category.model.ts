@@ -1,6 +1,5 @@
 import { Field, ObjectType } from '@nestjs/graphql';
 import { ProductEntity } from './product.entity';
-import { Product } from './product.model';
 
 @ObjectType()
 

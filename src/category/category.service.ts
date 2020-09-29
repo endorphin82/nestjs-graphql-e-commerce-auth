@@ -3,7 +3,6 @@ import { CategoryEntity } from '../models/category.entity';
 import { Repository } from 'typeorm';
 import { NewCategoryInput } from './dto/newCategoryInput';
 import { CategoryArgs } from './dto/category.args';
-import { ProductArgs } from '../product/dto/product.args';
 import { ProductEntity } from '../models/product.entity';
 
 @Injectable()

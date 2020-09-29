@@ -11,4 +11,5 @@ export class NewCategoryInput {
   @IsOptional()
   @Length(2, 500)
   description?: string;
+
 }

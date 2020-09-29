@@ -10,6 +10,7 @@ export class ProductService {
   constructor(
     @Inject('PRODUCT_REPOSITORY')
     private readonly _productRepository: Repository<ProductEntity>,
+    private readonly _categoryRepository: Repository<CategoryEntity>,
   ) {
   }
 
@@ -26,10 +27,9 @@ export class ProductService {
     // return [] as ProductEntity[];
   }
 
-  async findByCat(): Promise<CategoryEntity[]> {
+  async findOneCat(productsArgs: ProductArgs): Promise<CategoryEntity> {
 
-    // @ts-ignore
-    return this._productRepository.find({ relations: ["categories"] })
+    return this._categoryRepository.findOne({where: {id: productsArgs }})
   }
 
   async remove(id: string): Promise<Boolean> {
